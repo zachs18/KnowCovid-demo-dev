@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker-compose up -d --build --DOCKER_HOST=127.0.0.1:2375'
+                sh 'DOCKER_HOST="127.0.0.1:2375" docker-compose up -d --build'
             }
             post {
                 success {
