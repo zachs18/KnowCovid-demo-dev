@@ -8,7 +8,7 @@ pipeline {
             }
             post {
                 success {
-                    echo 'Build successful. Now archiving...'
+                    echo 'Build successful. Now archiving it...'
                     
                 }
             }
