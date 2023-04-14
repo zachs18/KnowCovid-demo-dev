@@ -2,7 +2,7 @@ app.service('mainService', function($http, $q, $location, $window) {
 
 	//local
     //var serverURL = "http://localhost:9300/Covid-19/";
-    var serverURL = "http://ec2-54-166-86-211.compute-1.amazonaws.com:9090/Covid-19";
+    var serverURL = "http://54.166.86.211:9090/Covid-19";
     
 	return {
 	   callPostRestAPI : function(url, data) {
