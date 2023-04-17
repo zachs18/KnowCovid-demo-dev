@@ -40,7 +40,7 @@ app.service('mainService', function($http, $q, $location, $window) {
 	   },
 	   
 	   callWebServiceRestAPI : function(url, data){
-		   
+		   console.log(webServiceURL);
 		   var url = webServiceURL + url;
 		   $('#cover').show();
 		   return $http({
